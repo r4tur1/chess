@@ -1,0 +1,19 @@
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js/package files (if you later add npm)
+node_modules/
+package-lock.json
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore local dev files (if any)
+*.local
+.env
+
+# Ignore build artifacts (if you add a build step)
+dist/
+build/
