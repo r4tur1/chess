@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Chess Game</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+  <title>Chess Game</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="board" style="width: 400px"></div>
-  <div class="controls">
-    <button id="resetBtn">Reset Game</button>
-    <p id="status">White's turn</p>
+  <div class="container">
+    <div id="board"></div>
+    <div class="controls">
+      <button id="resetBtn">Reset Game</button>
+      <p id="status">White's turn</p>
+    </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
