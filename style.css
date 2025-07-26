@@ -1,32 +1,52 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.container {
-  text-align: center;
+#chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid #333;
+    margin-bottom: 20px;
 }
 
-#board {
-  width: 400px;
-  margin: 0 auto;
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
 }
 
-.controls {
-  margin-top: 20px;
+.light {
+    background-color: #f0d9b5;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+.dark {
+    background-color: #b58863;
 }
 
 .highlight {
-  background-color: rgba(0, 255, 0, 0.3) !important;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.selected {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+#status {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
 }
